@@ -1,0 +1,7 @@
+DEPENDENCIES
+  chef-template
+    path: .
+    metadata: true
+
+GRAPH
+  chef-template (0.0.1)
