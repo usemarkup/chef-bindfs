@@ -13,15 +13,15 @@ platforms:
       platform: rhel
       provision_command:
         - yum install -y initscripts net-tools wget
-  - name: centos-7.0
-    driver_config:
-      image: centos:7
-      platform: rhel
-      provision_command:
-        - /bin/yum install -y initscripts net-tools wget
+#  - name: centos-7.0
+#    driver_config:
+#      image: centos:7
+#      platform: rhel
+#      provision_command:
+#        - /bin/yum install -y initscripts net-tools wget
 
 suites:
   - name: default
     run_list:
-      - recipe[chef-template]
+      - recipe[bindfs]
     attributes:

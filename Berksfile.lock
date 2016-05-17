@@ -1,7 +1,20 @@
 DEPENDENCIES
-  chef-template
+  bindfs
     path: .
     metadata: true
 
 GRAPH
-  chef-template (0.0.1)
+  bindfs (0.0.1)
+    build-essential (>= 0.0.0)
+  build-essential (4.0.0)
+    mingw (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  chef_handler (1.4.0)
+  compat_resource (12.9.1)
+  mingw (1.0.0)
+    compat_resource (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  seven_zip (2.0.0)
+    windows (>= 1.2.2)
+  windows (1.40.0)
+    chef_handler (>= 0.0.0)
